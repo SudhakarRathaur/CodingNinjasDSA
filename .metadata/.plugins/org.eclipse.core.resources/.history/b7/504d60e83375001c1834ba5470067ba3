@@ -1,0 +1,31 @@
+import java.util.Arrays;
+
+public class Bitwise {
+
+	public static void insertionSort(int[] arr) {
+    	//Your code goes here
+        
+        for(int i =1; i < arr.length; i++){
+            
+           		int temp = arr[i];
+                int j = i-1;
+                    
+                while(j>=0 && arr[j]>temp )   {
+                    
+                    arr[j+1] = arr[j];
+                    j = j-1;
+                }
+            	
+            	arr[j+1] = temp;
+            }
+            
+        }
+	
+	public static void Main(String[] args) {
+		int arr[] = {1,7, 14, 0, 9, 4, 18, 18, 2, 4, 5 };
+		insertionSort(arr);
+		
+		System.out.println(Arrays.toString(arr));
+	
+	}
+}

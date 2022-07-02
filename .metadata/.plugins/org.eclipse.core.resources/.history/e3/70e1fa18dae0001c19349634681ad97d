@@ -1,0 +1,11 @@
+package Priority_Queue;
+
+public class PriorityQueueUse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Priority_Queue pq = new Priority_Queue();
+	}
+
+}

@@ -1,0 +1,17 @@
+package vehicle;
+
+public class Car extends Vehicle {
+	
+	int numGears;
+	boolean isConvertible;
+	
+	public void printCar() {
+		
+	System.out.println("Vehicle color : " + color );
+	System.out.println("Vehicle maxSpeed : " + maxSpeed );
+	System.out.println("Vehicle numGears : " + numGears );
+	System.out.println("Vehicle isConvertible : " + isConvertible );
+	
+	}
+	
+}

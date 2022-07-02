@@ -1,0 +1,14 @@
+package Random;
+
+public class Solution {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char ch = 'a' + 2 - 1;
+		
+		int b = 'c' - '0'; 
+		
+		System.out.println(b);
+	}
+
+}

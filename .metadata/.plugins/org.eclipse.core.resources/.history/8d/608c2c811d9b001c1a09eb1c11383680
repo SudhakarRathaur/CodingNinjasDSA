@@ -1,0 +1,38 @@
+package Random;
+
+public class Solution {
+	
+	public static boolean checkSequence(String a, String b) {
+	
+		if(b.length() == 0){
+            return true;
+        }
+        
+        if(a.length() == 0)
+        {
+            return false;
+        }        
+        char ch = b.charAt(0);
+        int  k = 0;
+        
+        for(int i = 0; i< a.length(); i++){
+            if(ch == a.charAt(i)){
+                k = i;
+                break;
+            }
+            else{
+                return false;
+            }
+        }
+        
+        boolean smallAns = checkSequence(a.substring(k) , b.substring(1));
+        return smallAns;
+        
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(checkSequence("st3h5irteuyarh!" ,"shrey"));
+	}
+
+}
